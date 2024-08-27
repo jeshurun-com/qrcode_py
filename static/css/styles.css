@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 450px;  /* Reduced the width */
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;  /* Adjusted font size */
+    margin-bottom: 20px;  /* Added margin to separate elements */
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;  /* Reduced padding */
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;  /* Adjusted font size */
+}
+
+button {
+    padding: 8px 16px;  /* Reduced padding */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;  /* Adjusted font size */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.qr-code-result {
+    margin-top: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 8px 16px;  /* Reduced padding */
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 14px;  /* Adjusted font size */
+}
+
+.download-btn:hover {
+    background-color: #218838;
+}
+
+img {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ensure the table has a fixed layout */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    table-layout: fixed;  /* Prevents table cells from expanding beyond the table width */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    word-wrap: break-word;  /* Allows long text to wrap within cells */
+}
+
+td img {
+    max-width: 100px;  /* Ensures the image stays within the cell */
+    height: auto;  /* Maintains aspect ratio */
+    display: block;  /* Centers the image horizontally within the cell */
+    margin: 0 auto;  /* Adds auto margins to center the image */
+}
+
+td {
+    overflow: hidden;  /* Ensures content doesn’t overflow */
+    text-overflow: ellipsis;  /* Adds ellipsis (…) for overflow text */
+}
+
+.delete-btn {
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}

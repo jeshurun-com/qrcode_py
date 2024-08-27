@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Converter</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/script.js' %}"></script></head>
+<body>
+    <div class="container">
+        <h1>QR Code Converter</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label for="text">Enter Text or URL:</label>
+            <textarea id="text" name="text" rows="4" placeholder="Enter text or URL here..."></textarea>
+            <button type="submit">Generate QR Code</button>
+        </form>
+
+        {% if qr_code_url %}
+        <div class="qr-code-result">
+            <h2>Your QR Code:</h2>
+            <img src="{{ qr_code_url }}" alt="Generated QR Code">
+            <br>
+            <a href="{{ qr_code_download_url }}" download="qrcode.png" class="download-btn">Download QR Code</a>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
